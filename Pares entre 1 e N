@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main() {
+    int N, i;
+
+    printf("Informe um número inteiro positivo: ");
+    scanf("%d", &N);
+
+    if (N <= 0) {
+        printf("Por favor, insira um número inteiro positivo.\n");
+        return 1;
+    }
+
+    printf("Números pares entre 1 e %d:\n", N);
+    for (i = 1; i <= N; i++) {
+        if (i % 2 == 0) {
+            printf("%d ", i);
+        }
+    }
+
+    printf("\n");
+    
+    system("pause");
+    return 0;
+}
