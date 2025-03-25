@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main() {
     int idade;
@@ -8,11 +9,13 @@ int main() {
 
     if (idade < 18) {
         printf("Menor de idade\n");
-    } else if (idade >= 18 && idade <= 64) {
+    } else if (idade <= 64) {
         printf("Adulto\n");
     } else {
         printf("Idoso\n");
     }
+
+    system("pause");
 
     return 0;
 }
